@@ -1,0 +1,16 @@
+<template name="header">
+	<nav>
+		<div class="nav-wrapper teal lighten-2">
+			<a href="{{pathFor 'home'}}" class="brand-logo"><i class="material-icons left">language</i>App</a>
+			<ul id="nav-mobile" class="right">
+				<li class="{{activeRouteClass 'tasks'}}">
+					<a  href="{{pathFor 'tasks'}}">Tasks</a>
+				</li>
+				<li class="{{activeRouteClass 'about'}}">
+					<a  href="{{pathFor 'about'}}">About</a>
+				</li>
+				<li>{{> loginButtons}}</li>
+			</ul>
+		</div>
+	</nav>
+</template>
